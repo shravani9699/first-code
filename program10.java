@@ -1,8 +1,14 @@
-class multiply{
-        public static void main(String[] args){
-                int sum=1;
-                for(int i=1;i<=10;i++){
-                        sum=sum*i;
-                }
-                System.out.println(sum);
-        }}
+class NumberPattern {
+    public static void main(String[] args) {
+        int rows = 4;
+        int columns = 4;
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = i; j <= i + columns - 1; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println(); 
+        }
+    }
+}
+

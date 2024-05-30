@@ -1,6 +1,14 @@
-class table{
-        public static void main(String[] args){
-                for(int i=1;i<=170;i++){
-                        if(i%17==0){
-                        System.out.println(i);
-                }}}}
+class ReverseAlphabets {
+    public static void main(String[] args) {
+        int rows = 4;
+        int columns = 4;
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = columns; j >= 1; j--) {
+                System.out.print((char)('a' + j - 1) + " ");
+            }
+            System.out.println(); 
+        }
+    }
+}
+
