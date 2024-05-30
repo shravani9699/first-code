@@ -1,16 +1,10 @@
-class Pattern {
-    public static void main(String[] args) {
-        int rows = 3;
-        int columns = 3;
-        int counter = 1;
+class logicalcode{
+        public static void main(String[] args){
+                int x=10;
+                int y=11;
+                System.out.println((++x>=y) && (x<++y));
+                System.out.println(x);
 
-        for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= columns; j++) {
-                System.out.print("C" + counter + " ");
-                counter++;
-            }
-            System.out.println(); 
+                System.out.println(y);
         }
-    }
 }
-

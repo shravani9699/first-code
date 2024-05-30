@@ -1,8 +1,9 @@
-class electricity{
+class c2w{
         public static void main(String[] args){
-                float current=15.4f;
-                int voltage=182;
-                System.out.println(current);
-                System.out.println(voltage);
+                int x=5;
+                int y=3;
+                System.out.println(x>>y);
+
+                System.out.println(x<<y);
         }
 }

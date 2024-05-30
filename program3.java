@@ -1,14 +1,7 @@
-class Pattern {
-    public static void main(String[] args) {
-        int columns = 3;
-        int rows = 3;
-
-        for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= columns; j++) {
-                System.out.print(i + " ");
-            }
-            System.out.println(); 
+class binary{
+        public static void main(String[] args){
+                byte a=5;
+                String b="00000101";
+                System.out.println((String)a==b);
         }
-    }
 }
-

@@ -1,15 +1,13 @@
-class Pattern {
-    public static void main(String[] args) {
-        int columns = 3;
-        int rows = 3;
+class relational{
+        public static void main(String[] args){
+                int a=7;
+                int b=5;
+                System.out.println(a>b);
+                System.out.println(a<b);
+                System.out.println(a==b);
+                System.out.println(a!=b);
+                System.out.println(a>=b);
 
-        for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= columns; j++) {
-                System.out.print(j + " ");
-            }
-            System.out.println(); 
+                System.out.println(a<=b);
         }
-    }
 }
-
-
