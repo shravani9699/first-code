@@ -1,35 +1,34 @@
 import java.util.Scanner;
 
-class PatternPrinter {
-    public static void printPattern(int rows) {
-        int startNumber = 1;
-
-        for (int i = rows; i >= 1; i--) {
-            
-            for (int j = 1; j <= rows - i; j++) {
-                System.out.print("  "); 
-            }
-
-            
-            int number = startNumber;
-            for (int j = 1; j <= i; j++) {
-                System.out.print(number + " ");
-                number++;
-            }
-
-            
-            startNumber++;
-            System.out.println();
+ class Composite {
+    public static boolean isComposite(int number) {
+        if (number <= 1) {
+            return false;
         }
+
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return true; 
+            }
+        }
+        return false; 
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the number of rows: ");
-        int rows = scanner.nextInt();
-        scanner.close();
 
-        printPattern(rows);
+      
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+
+        
+        if (isComposite(num)) {
+            System.out.println(num + " is a composite number.");
+        } else {
+            System.out.println(num + " is not a composite number.");
+        }
+
+        scanner.close();
     }
 }
 

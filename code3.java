@@ -1,26 +1,21 @@
 import java.util.Scanner;
-
- class PatternPrinter {
-    
+ class Factorial {
+    public static long factorial(int number) {
+        long output = 1;
+        for (int i = 1; i <= number; i++) {
+            output *= i;
+        }
+        return output;
+    }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the number of rows: ");
-        int rows = scanner.nextInt();
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        long fact = factorial(num);
+        System.out.println("The factorial of " + num + " is " + fact);
+
         scanner.close();
-
-                int startNumber = 1;                                                                                                                                                                                                                                                      for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= rows - i; j++) {                                                                                                    System.out.print("  ");
-            }                                                                                                                        
-
-            int number = startNumber;
-            for (int j = 1; j <= i; j++) {
-                System.out.print(number + " ");
-                number += 3;
-            }                                                                                                                        
-
-            startNumber += 3;
-            System.out.println();                                                                                                            }                                                                                                                                }                                                                                                                                                                                                                                                                     
     }
-
+}
 

@@ -1,23 +1,26 @@
 import java.util.Scanner;
 
- class PatternPrinter {
+ class ReverseNumber {
+
     
-        
+    public static int reverseNumber(int number) {
+        int reversed = 0;
+        while (number != 0) {
+            int digit = number % 10;
+            reversed = reversed * 10 + digit;
+            number /= 10;
+        }
+        return reversed;
+    }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the number of rows: ");
-        int rows = scanner.nextInt();
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        int reversedNum = reverseNumber(num);
+        System.out.println("The reverse of " + num + " is " + reversedNum);
+
         scanner.close();
-
-            for (int i = 0; i < rows; i++) {
-
-            for (int j = 0; j < i; j++) {
-                System.out.print("  ");
-            }                                                                                                                                                                                                                                                                                                                                                                                                              for (int j = i; j < rows; j++) {
-                System.out.print((char) ('A' + j) + " ");
-            }                                                                                                                                                                                                                                                                         System.out.println();
-        }                                                                                                                                }                                                                                                                                      
     }
-
+}
 
