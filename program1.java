@@ -1,15 +1,13 @@
-class operations{
-        public static void main(String[] args){
-                int a=10;
-                int b=5;
-                int sum=a+b;
-                int sub=a-b;
-                int mult=a*b;
-                int div=a/b;
-                System.out.println(sum);
+class Pattern {
+    public static void main(String[] args) {
+        int rows = 4;
 
-                System.out.println(sub);
-                System.out.println(mult);
-                System.out.println(div);
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println(); 
         }
+    }
 }
+

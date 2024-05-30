@@ -1,12 +1,20 @@
-class bitwise{
-        public static void main(String[] args){
-                int a=5;
-                int b=3;
-                System.out.println(a&b);
+import java.util.Scanner;
 
-                System.out.println(a|b);
-                System.out.println(a^b);
-                System.out.println(a<<b);
-                System.out.println(a>>b);
+ class Pattern {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(3 * j + " ");
+            }
+            System.out.println();
         }
+
+        scanner.close();
+    }
 }
+

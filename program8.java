@@ -1,10 +1,19 @@
-class logicalcode{
-        public static void main(String[] args){
-                int x=10;
-                int y=11;
-                System.out.println((++x>=y) && (x<++y));
-                System.out.println(x);
+import java.util.Scanner;
 
-                System.out.println(y);
+class NumberPattern {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of rows: ");
+        int rows = sc.nextInt();
+
+        for (int i = rows; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
         }
+
+        sc.close();
+    }
 }
+
