@@ -1,21 +1,12 @@
- class TrafficLight {
-    public static void main(String[] args) {
-        String Color = "yellow"; 
-
-        switch (Color) {
-            case "red":
-                System.out.println("Stop! ");
-                break;
-            case "yellow":
-                System.out.println("The light is yellow.");
-                break;
-            case "green":
-                System.out.println("Go!");
-                break;
-            default:
-                System.out.println("Invalid color. Please provide a valid traffic light color.");
-        }
-    }
+class div{
+	public static void main (String[]args){
+		int number=100;
+		while(number>=24){
+			if(number%4==0 && number%5==0){
+				System.out.println(number);
+			}
+			number--;
+			
+		}
+	}
 }
-
-                            

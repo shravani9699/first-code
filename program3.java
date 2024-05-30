@@ -1,17 +1,16 @@
-class size{
-	public static void main (String[]args){
-		char ch='x';
-		switch(ch){
-			case 's':
-			     System.out.println("small size");
-			     break;
-			case 'x':
-			     System.out.println("extra large");
-			     break;
+ class range {
+    public static void main(String[] args) {
+        System.out.println("Numbers divisible by 4 and 7 in the range 50 to 100:");
 
-			default:
-			     System.out.println("invalid format");
-		}
-	}
+        int number = 50;
+
+        while (number <= 100) {
+            if (number % 4 == 0 && number % 7 == 0) {
+                System.out.println(number);
+            }
+            number++;
+        }
+    }
 }
+
 
