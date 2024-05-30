@@ -1,25 +1,32 @@
 import java.util.Scanner;
-class Pattern3 {
+class SimplePattern {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.print("Enter the starting character: ");
-        char startChar = scanner.next().charAt(0);
-        
-        System.out.print("Enter the number of rows: ");
-        int rows = scanner.nextInt();
-        
-        for (int i = 0; i < rows; i++) {
-            char currentChar = startChar;
-            for (int j = 0; j <= i; j++) {
-                System.out.print(currentChar + " ");
-                currentChar--; 
+        Scanner sc = new Scanner(System.in);
+
+        // Asking user for input
+        System.out.println("Enter the starting number:");
+        int start = sc.nextInt();
+
+        System.out.println("Enter the decrement value:");
+        int decrement = sc.nextInt();
+
+        int current = start;
+        int row = 1;
+
+        while (current > 0) {
+            for (int j = 0; j < row; j++) {
+                if (current > 0) {
+                    System.out.print(current + " ");
+                    current -= decrement;
+                } else {
+                    break;
+                }
             }
             System.out.println();
+            row++;
         }
-        
-        scanner.close();
+
+        sc.close();
     }
 }
-
 

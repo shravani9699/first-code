@@ -1,28 +1,27 @@
 import java.util.Scanner;
-class Pattern3 {
+class CharPattern {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the starting character: ");
-        char startChar = scanner.nextLine().charAt(0);
+        Scanner sc = new Scanner(System.in);
 
-        
-        System.out.print("Enter the number of rows: ");
-        int rows = scanner.nextInt();
+        // Asking user for input
+        System.out.println("Enter the starting character:");
+        char start = sc.next().charAt(0);
 
-        for (int i = 0; i < rows; i++) {
-            char currentChar = startChar;
-            for (int j = 0; j <= i; j++) {
-                if (i % 2 == 0) {
-                    System.out.print(Character.toUpperCase(currentChar) + " ");
-                } else {
-                    System.out.print(Character.toLowerCase(currentChar) + " ");
-                }
-                currentChar--;
+        System.out.println("Enter the number of rows:");
+        int numRows = sc.nextInt();
+
+        char current = start;
+
+        for (int row = 0; row < numRows; row++) {
+            for (int col = 0; col < numRows - row; col++) {
+                System.out.print(current + " ");
+                current--;
             }
             System.out.println();
         }
 
-        scanner.close(); 
+        sc.close();
     }
 }
+
 

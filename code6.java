@@ -2,22 +2,20 @@ import java.util.Scanner;
 
 class Pattern {
     public static void main(String[] args) {
+        System.out.print("Enter the number of rows: ");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a character:");
-        char startchar = sc.next().charAt(0); 
-        System.out.println("Enter the number of rows:");
-        int row = sc.nextInt();
+        int rows = sc.nextInt();
+        System.out.print("Enter the first number: ");
+        int number = sc.nextInt();
+        System.out.print("Enter the character: ");
+        char ch = sc.next().charAt(0);
         
-        for (int i = 0; i < row; i++) {
-            int num = 1;
-            for (int j = 0; j <= i; j++) {
-                if (i % 2 == 0) {
-                    System.out.print(num++ + " ");
-                } else {
-                    System.out.print((char) ('A' + j) + " ");
-                }
+        for (int i = 1; i <= rows; i++) {
+            if (i % 2 != 0) {
+                System.out.println(number);
+            } else {
+                System.out.println(ch);
             }
-            System.out.println();
         }
         sc.close();
     }
