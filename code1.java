@@ -1,36 +1,23 @@
 import java.util.Scanner;
-
-class Primenumber {
-    public static boolean isPrime(int number) {
-        if (number <= 1) {
-            return false;
-        }
-        
-       
-        for (int i = 2; i <= Math.sqrt(number); i++) {
-            
-            if (number % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
+ class PatternPrinter {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        
-        System.out.print("Enter a number: ");
-        int num = scanner.nextInt();
-
-       
-        if (isPrime(num)) {
-            System.out.println(num + " is a prime number.");
-        } else {
-            System.out.println(num + " is not a prime number.");
-        }
-
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
         scanner.close();
+	     for (int i = 1; i <= rows; i++) {
+
+            for (int j = 1; j <= rows - i; j++) {
+                System.out.print(" ");                                                                                                           }
+
+           
+            for (int j = 1; j <= i * 2 - 1; j++) {
+                System.out.print("1 ");                                                                                                          }
+                                                                                                                                                 System.out.println();                                                                                                            }
     }
-}
+
+      
+    }
+
 

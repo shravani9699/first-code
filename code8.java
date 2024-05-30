@@ -1,29 +1,23 @@
 import java.util.Scanner;
 
-class MixedPattern {
+ class PatternPrinter {
+    
+
     public static void main(String[] args) {
-        System.out.println("Enter the number of rows");
-        Scanner sc = new Scanner(System.in);
-        int rows = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+        scanner.close();
 
-        for (int i = 1; i <= rows; i++) {
+               for (int i = rows; i >= 1; i--) {
             
-            int startNum = rows - i + 1;
-            
-            int endNum = startNum + (2 * (i - 1));
-
-           
-            for (int j = 1; j <= (rows - i) * 2; j++) {
-                System.out.print(" ");
-            }
+            for (int j = 1; j <= rows - i; j++) {
+                System.out.print("  "); }
 
             
-            for (int j = startNum; j <= endNum; j++) {
-                System.out.print(j + " ");
-            }
-            System.out.println();
-        }
-        sc.close();
+            for (int j = 1; j <= i * 2 - 1; j++) {
+                System.out.print(i + " ");
+            }                                                                                                                                                                                                                                                                         System.out.println();                                                                                                            }                                                                                                                                }                                                                                                                                        
     }
-}
+
 
