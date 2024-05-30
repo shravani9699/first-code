@@ -1,1 +1,1 @@
-# first-code
+Java practices code
