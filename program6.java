@@ -1,19 +1,30 @@
-import java.util.Scanner;
- class NumberPattern {
+class Number {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        int number = 3; // You can change this to any number from 0 to 5
 
-        System.out.print("Enter the number of rows: ");
-        int rows = scanner.nextInt();
-
-        for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(i * j + " ");
-            }
-            System.out.println();
+        switch (number) {
+            case 0:
+                System.out.println("Zero");
+                break;
+            case 1:
+                System.out.println("One");
+                break;
+            case 2:
+                System.out.println("Two");
+                break;
+            case 3:
+                System.out.println("Three");
+                break;
+            case 4:
+                System.out.println("Four");
+                break;
+            case 5:
+                System.out.println("Five");
+                break;
+            default:
+                System.out.println("Entered number is greater than 5");
         }
-
-        scanner.close();
     }
 }
+
 

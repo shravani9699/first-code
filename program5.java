@@ -1,20 +1,51 @@
-import java.util.Scanner;
-
- class Pattern {
+class Month {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        int month = 4;
 
-        System.out.print("Enter the number of rows: ");
-        int rows = scanner.nextInt();
-
-        for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(3 * j + " ");
+        if (month >= 1 && month <= 12) {
+            switch (month) {
+                case 1:
+                    System.out.println("January");
+                    break;
+                case 2:
+                    System.out.println("February");
+                    break;
+                case 3:
+                    System.out.println("March");
+                    break;
+                case 4:
+                    System.out.println("April");
+                    break;
+                case 5:
+                    System.out.println("May");
+                    break;
+                case 6:
+                    System.out.println("June");
+                    break;
+                case 7:
+                    System.out.println("July");
+                    break;
+                case 8:
+                    System.out.println("August");
+                    break;
+                case 9:
+                    System.out.println("September");
+                    break;
+                case 10:
+                    System.out.println("October");
+                    break;
+                case 11:
+                    System.out.println("November");
+                    break;
+                case 12:
+                    System.out.println("December");
+                    break;
+                default:
+                    System.out.println("Invalid month number. Please enter a number between 1 and 12.");
             }
-            System.out.println();
+        } else {
+            System.out.println("Invalid month number. Please enter a number between 1 and 12.");
         }
-
-        scanner.close();
     }
 }
 

@@ -1,19 +1,23 @@
-import java.util.Scanner;
-
-class NumberPattern {
+ class Number {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of rows: ");
-        int rows = sc.nextInt();
+        int num = 15; 
 
-        for (int i = rows; i >= 1; i--) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(i + " ");
+        if (num >= 0) {
+            switch (num % 2) {
+                case 0:
+                    System.out.println("Even");
+                    break;
+                case 1:
+                case -1:
+                    System.out.println("Odd");
+                    break;
+                default:
+                    System.out.println("Invalid input");
+                    break;
             }
-            System.out.println();
+        } else {
+            System.out.println("Sorry, negative numbers not allowed");
         }
-
-        sc.close();
     }
 }
 

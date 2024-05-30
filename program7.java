@@ -1,17 +1,27 @@
-import java .util.Scanner;
-class pattern{
+class budget{
 	public static void main (String[]args){
-		Scanner sc =new Scanner (System.in);
-		System.out.println("Enter a row : ");
-		int row = sc.nextInt();
-		for(int i= row; i>=1 ;i--){
-			for (int j=1;j<=i ;j++){
-				System.out.print("*");
-			}
-			System.out.println();
+		int budget=2000;
+		switch(budget){
+			
+				case 15000:
+					System.out.println("jammu and kashmir");
+					break;
+				case 10000:
+                                        System.out.println("Manali");
+                                        break;
+				case 6000:
+                                        System.out.println("Amritsar");
+                                        break;
+				case 2000:
+      					System.out.println("Mahabaleshwar");
+					break;	
+				        
+                                default:
+					System.out.println("try next time");                                                                                                                                      break;                                                                                                                                                                              	
 		}
 	}
-}
+}	
+                                                 	
 
-
+                                                 
 

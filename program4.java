@@ -1,26 +1,36 @@
-import java.util.Scanner;
-
-class Pattern {
+class Days {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        int day = 7;
 
-        System.out.print("Enter the number of rows: ");
-        int rows = sc.nextInt();
-
-        System.out.print("Enter the starting character: ");
-        char startChar = sc.next().charAt(0);
-
-        for (int i = 0; i < rows; i++) {
-            char currentChar = startChar;
-            for (int j = 0; j <= i; j++) {
-                System.out.print(currentChar + " ");
-                currentChar++;
+        if (day >= 1 && day <= 7) {
+            switch (day) {
+                case 1:
+                    System.out.println("Monday");
+                    break;
+                case 2:
+                    System.out.println("Tuesday");
+                    break;
+                case 3:
+                    System.out.println("Wednesday");
+                    break;
+                case 4:
+                    System.out.println("Thursday");
+                    break;
+                case 5:
+                    System.out.println("Friday");
+                    break;
+                case 6:
+                    System.out.println("Saturday");
+                    break;
+                case 7:
+                    System.out.println("Sunday");
+                    break;
+                default:
+                    System.out.println("Invalid input");
             }
-            System.out.println();
+        } else {
+            System.out.println("Invalid input");
         }
-
-        sc.close();
     }
 }
-
-               	       
+		                                                  

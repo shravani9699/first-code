@@ -1,13 +1,17 @@
-class Pattern {
-    public static void main(String[] args) {
-        int rows = 4;
-
-        for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print("* ");
-            }
-            System.out.println(); 
-        }
-    }
+class evenodd{
+	public static void main (String[]args){
+		int number=20;
+		switch(number%2){
+			case 0:
+				System.out.println("even");
+				break;
+			case 1:
+			case -1:
+				System.out.println("odd");
+				break;
+		
+		default:
+			System.out.println("invalid input");
+		}
+	}
 }
-
