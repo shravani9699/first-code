@@ -1,11 +1,11 @@
-class cube{
+class count {
 	public static void main (String[]args){
-		int number=1;
-		while(number<=10){
-			if(number*number*number>=1){
-				System.out.println(number*number*number);
-				number++;
-			}
+		int number=93079224;
+		int count=0;
+		while(number!=0){
+			count++;
+			number/=10;
 		}
+		System.out.println(count);
 	}
 }

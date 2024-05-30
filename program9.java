@@ -1,14 +1,24 @@
-class Sum {
+ class OddEvenDigit {
     public static void main(String[] args) {
-        int start = 150;
-        int end = 101;
-        int sum = 0;
+        int number = 22780;
+        int count = 0;
 
-        while (start >= end) {
-            sum += start;
-            start--;
+        while (number > 0) {
+            int digit = number % 10;
+
+            if (digit % 2 == 0) {
+                System.out.println("Even digit: " + digit);
+            } else {
+                System.out.println("Odd digit: " + digit);
+            }
+
+            count++;
+            number /= 10;
         }
 
-        System.out.println("Sum of integers from 150 to 101: " + sum);
+        System.out.println("Total digits: " + count);
     }
 }
+	
+
+

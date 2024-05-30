@@ -1,13 +1,12 @@
-class letter{
-	public static void main (String[]args){
-		char ch='A';
-		while(ch<='Z'){
-			if(ch!='A'&&ch!='E'&&ch!='I'&&ch!='O'&&ch!='U'){
-				System.out.println(ch);
-			}else{
-				System.out.println();
-			}
-			ch++;
-		}
-	}
+ class PrintDigits {
+    public static void main(String[] args) {
+        int num = 9307;
+
+        while (num > 0) {
+            int digit = num % 10;
+            System.out.println(digit);
+            num /= 10; 
+        }
+    }
 }
+

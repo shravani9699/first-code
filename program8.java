@@ -1,16 +1,21 @@
-class Sum {
+class OddDigits {
     public static void main(String[] args) {
-        int start = 90;
-        int end = 11;
-        int sum = 0;
+        int number = 216985;
+        int count = 0;
 
-        while (start >= end) {
-            sum += start;
-            start--;
+        while (number > 0) {
+            int digit = number % 10;
+
+            if (digit % 2 == 1) {
+                System.out.println("Odd Digit: " + digit);
+                count++;
+            }
+
+            
+            number /= 10;
         }
 
-        System.out.println("Sum of integers from 90 to 11: " + sum);
+        System.out.println("Count of odd digits: " + count);
     }
 }
-
 

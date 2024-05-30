@@ -1,16 +1,17 @@
- class range {
+ class Letter {
     public static void main(String[] args) {
-        System.out.println("Numbers divisible by 4 and 7 in the range 50 to 100:");
+        char currentChar = 'A'; 
+        int number = 1;
 
-        int number = 50;
-
-        while (number <= 100) {
-            if (number % 4 == 0 && number % 7 == 0) {
-                System.out.println(number);
+        while (number <= 6) {
+            if (currentChar == 'A' || currentChar == 'B' || currentChar == 'C' ||
+                currentChar == 'D' || currentChar == 'E' || currentChar == 'F') {
+                System.out.println(currentChar);
             }
+
+            currentChar++; 
             number++;
         }
     }
 }
-
 
