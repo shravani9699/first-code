@@ -1,23 +1,26 @@
 import java.util.Scanner;
-
-class Pattern {
+ class PatternExample {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of rows:");
-        int rows = sc.nextInt();
-        sc.close();
+        // Create a Scanner object to read input
+        Scanner scanner = new Scanner(System.in);
 
-        for (int i = 1; i <= rows; i++) {
-           
-            for (int j = 1; j < i; j++) {
-                System.out.print("  ");
+        // Prompt the user to enter a number
+        System.out.println("Enter a number:");
+
+        // Read the input integer from the user
+        int number = scanner.nextInt();
+
+        // Print the pattern
+        for (int i = 1; i <= number; i++) {
+            if (i % 2 == 1) { // If i is odd
+                System.out.println(i);
+            } else { // If i is even
+                System.out.print((char) (i + 64) + " ");
             }
-            
-            for (int j = i; j <= rows; j++) {
-                System.out.print(j + " ");
-            }
-            System.out.println();
         }
+
+        // Close the scanner
+        scanner.close();
     }
 }
 

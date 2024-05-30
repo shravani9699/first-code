@@ -1,18 +1,23 @@
 import java.util.Scanner;
 
-class Pattern {
+public class Pattern3 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of rows:");
-        int rows = sc.nextInt();
-        sc.close();
+        Scanner scanner = new Scanner(System.in);;w
+        System.out.print("Enter the starting character: ");
+        char startChar = scanner.nextLine().charAt(0);
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
 
-        for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(i * j + " ");
+        int count = 0;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print((char)(startChar + count) + " ");
+                count++;
             }
             System.out.println();
         }
+
+        scanner.close(); 
     }
 }
 

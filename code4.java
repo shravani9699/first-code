@@ -1,21 +1,28 @@
 import java.util.Scanner;
-
-class Pattern {
+class Pattern3 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of rows:");
-        int rows = sc.nextInt();
-        System.out.println("Enter the number to generate multiples:");
-        int num = sc.nextInt();
-        sc.close();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the starting character: ");
+        char startChar = scanner.nextLine().charAt(0);
 
-        for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(num * j + " ");
+        
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+
+        for (int i = 0; i < rows; i++) {
+            char currentChar = startChar;
+            for (int j = 0; j <= i; j++) {
+                if (i % 2 == 0) {
+                    System.out.print(Character.toUpperCase(currentChar) + " ");
+                } else {
+                    System.out.print(Character.toLowerCase(currentChar) + " ");
+                }
+                currentChar--;
             }
             System.out.println();
         }
+
+        scanner.close(); 
     }
 }
-
 
