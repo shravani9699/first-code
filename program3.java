@@ -1,10 +1,5 @@
-class scientist {
-    public static void main(String[] args) {
-        float pie = 3.14f;
-        int degree = 360;
-
-        System.out.println(pie);
-        System.out.println(degree);
-    }
-}
-
+class three{
+        public static void main(String[] args){
+                for(int i=100;i<=110;i++){
+                        System.out.println(i);}
+        }}

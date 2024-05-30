@@ -1,9 +1,6 @@
-class employee {
-    public static void main(String[] args) {
-        int count = 12;
-        float expense = 450.0f;
-        System.out.println(count);
-        System.out.println(expense);
-    }
-}
-
+class even{
+        public static void main(String[] arsg){
+                for(int i=1;i<=100;i++){
+                        if(i%2==0){
+                                System.out.println(i);}
+                        }}}

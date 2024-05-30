@@ -1,9 +1,6 @@
-class population{
+class table{
         public static void main(String[] args){
-                long world=123233442l;
-                long india=1435356l;
-                System.out.println(world);
-
-                System.out.println(india);
-        }
-}
+                for(int i=1;i<=170;i++){
+                        if(i%17==0){
+                        System.out.println(i);
+                }}}}

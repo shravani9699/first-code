@@ -1,9 +1,6 @@
-class keyboard{
-        public static void main(String[] args){
-                byte button=104;
-                float cost=150.25f;
-                System.out.println(button);
-                System.out.println(cost);
-        }
-}
-
+class odd{
+        public static void main(String[] arsg){
+                for(int i=1;i<=100;i++){
+                        if(i%2==1){
+                                System.out.println(i);}
+                        }}}

@@ -1,9 +1,8 @@
-class AC{
+class sumAll{
         public static void main(String[] args){
-                byte temp=22;
-                float roomtemp=34.23f;
-                System.out.println(temp);
-
-                System.out.println(roomtemp);
-        }
-}
+                int sum=0;
+                for(int i=1;i<=10;i++){
+                        sum=sum+i;
+                }
+                System.out.println(sum);
+        }}

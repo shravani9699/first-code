@@ -1,9 +1,6 @@
-class student{
+class table{
         public static void main(String[] args){
-                float percentage=98.99F;
-                char grade='A';
-                System.out.println(percentage);
-
-                System.out.println(grade);
-        }
-}
+                for(int i=140;i>=14;i--){
+                        if(i%14==0){
+                        System.out.println(i);
+                }}}}
